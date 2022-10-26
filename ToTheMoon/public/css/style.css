@@ -1,0 +1,184 @@
+body{
+    background-color: #25273c;
+}
+
+#main-bg {
+    background: url('../images/sample-eiffel.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 85vh;
+}
+
+.padded-section{
+    padding-top: 7em;
+    padding-bottom: 7em;
+    position: relative;
+    width: 100%;
+}
+
+.alter-color-section{
+    background-color: #161722;
+}
+
+.main-search{
+    position: relative;
+    background: #33313b;
+    box-shadow: 0px 75px 94px -66px rgb(0 0 0 / 66%);
+}
+
+.main-search .form-group label{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.main-search .form-group .form-control{
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: inherit !important;
+    font-size: 18px;
+    border: none !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+    background: transparent !important;
+    border-radius: 0;
+}
+
+.main-search .form-group .form-field .btn{
+    padding: 22px 10px !important;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+.main-search .form-group {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.main-search .form-group .form-field {
+    position: relative;
+    display: block;
+}
+
+#strong-number{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.suggestion-selection .img{
+    display: block;
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+}
+
+.suggestion-selection .text{
+    padding: 20px;
+    position: relative;
+    height: 320px;
+}
+
+.suggestion-selection .text h3{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.suggestion-selection .text span{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    display: inline-block;
+    background: #33313b;
+    padding: 4px 5px 4px 15px;
+    border-radius: 20px 0 0 20px;
+}
+
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.home-destination-items{
+    margin-bottom: 30px;
+}
+
+.home-destination-items .img{
+    display: block;
+    width: 100%;
+    height: 270px;
+}
+
+.home-destination-items .text{
+    width: 100%;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-top: none;
+    background-color: rgb(216, 215, 215);
+    border-radius: 5px;
+}
+
+.home-destination-items .text .price{
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    background: #F4D47E;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+.cust-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.feedback{
+    border-left: 4px solid #F4D47E;
+}
+
+.cust-details{
+    display: inline-block;
+    font-size: 12px;
+}
+
+.unstyle-list{
+    padding-left: 0;
+    list-style: none;
+}
+
+footer{
+    padding-top: 4em;
+}
+
+footer span{
+    display: table-cell;
+    vertical-align: top;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px){
+.main-search{
+    margin-top: -75px;
+}}
+
+/*
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#about-img{
+    background: url('images/sample-yokohama.png')
+}
+*/
