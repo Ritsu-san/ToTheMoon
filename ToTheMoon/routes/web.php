@@ -33,6 +33,8 @@ Route::group(['middleware' => 'auth'], function(){
 Route::get('adminindex', 'App\Http\Controllers\destinationcontroller@index');
 Route::get('destination/{id}/delete', 'App\Http\Controllers\destinationcontroller@destroy')->name('destination.delete');
 Route::post('custom-registeradventure', 'App\Http\Controllers\destinationcontroller@customRegisterAdventure')->name('registeradventure.custom');
+Route::get('destination/{id}/edit', 'App\Http\Controllers\destinationcontroller@edit')->name('destination.edit');
+Route::post('destination/update', 'App\Http\Controllers\destinationcontroller@update')->name('destination.update');
 });
 Route::get('index', 'App\Http\Controllers\userpagecontroller@index')->name('index');
 

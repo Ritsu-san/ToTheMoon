@@ -61,4 +61,26 @@ class destinationcontroller extends Controller
     {
         $destination = destination::where('id',$id)->delete();
         return Response::json($destination);    }
+
+    public function edit($id)
+    {
+        $where = array('id' => $id);
+        $destination  = destination::where($where)->first();
+ 
+        return Response::json($destination);
+    }
+
+    public function update(Request $request, destination $destination)
+    {
+        $destination = destination::find($request->post('hdnlistId'));
+        $destination->destination = $request->post('destination');
+        $destination->description = $request->post('description');
+        $destination->price = $request->post('price');
+        $destination->video = $request->post('video');
+        $destination->fooddescription = $request->post('fooddescription');
+        $destination->update();
+        return Redirect('adminindex');
+ 
+    }
+
 }
